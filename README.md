@@ -44,15 +44,3 @@ Każda bryła w `Solid3D.hpp` posiada nazwane elementy (wierzchołki `A, B, C, S
 
 ---
 
-## 3. Ściąga na pierwsze spotkanie (co po kolei pokazać i ustalić)
-
-### Co pokazać (3–5 minut):
-1. **Prototyp 3D w przeglądarce (`scripts/preview_tasks_3d.html`)** – obrócić ostrosłup, zmienić przezroczystość i przeklikać Kroki 1–3, pokazując jak JSON steruje elementami na bryle 3D (jako podpowiedź lub klucz do sprawdzania zaznaczeń ucznia).
-2. **Specyfikację brył i formatu JSON (`docs/zakres_stereometrii_i_format_json.md` + `data/tasks/`)** – zaproponowany podział brył z podstawy programowej i ustandaryzowane nazwy wierzchołków/odcinków.
-3. **Szkielet C++ (`include/solids/Solid3D.hpp`, `include/tasks/Task.hpp`)** – propozycja interfejsu łączącego grafikę 3D (Dawid), matematykę/picking (Paweł) oraz bazę zadań JSON (Maciej).
-4. **Uzupełnione `docs/DPP_wer. 1.00.docx`** – wstępnie wypełnione punkty 1–8 wymagane na I semestr.
-
-### Co ustalić z zespołem i opiekunem:
-1. **Podział ról dla całej 5-osobowej grupy w DPP** – potwierdzenie zadań dla Dawida Jezierskiego i Kacpera Lubeckiego w Tabeli 3.1 i Pkt 6.1 DPP.
-2. **Biblioteka okienkowa i UI** – ostateczna decyzja: `SFML` czy `GLFW + Dear ImGui` (pod kątem bocznego panelu wymiarów i treści zadań).
-3. **Formalności w Tabeli 3.2 DPP** – dopytanie opiekuna o nazwisko *Koordynatora katedralnego*, wpis w polu *Klient* oraz właściwą nazwę katedry w nagłówku tabeli.
