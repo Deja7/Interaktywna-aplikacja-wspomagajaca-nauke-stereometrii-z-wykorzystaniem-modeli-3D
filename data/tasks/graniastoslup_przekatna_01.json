@@ -1,0 +1,63 @@
+{
+  "id": "matura_pp_graniastoslup_01",
+  "title": "Przekątna główna i pole powierzchni całkowitej graniastosłupa prawidłowego czworokątnego",
+  "education_level": "secondary_basic",
+  "topic": "prisms_diagonals",
+  "difficulty": 1,
+  "problem_statement": "Podstawą graniastosłupa prawidłowego czworokątnego jest kwadrat o boku a = 4, a wysokość graniastosłupa wynosi H = 6. Oblicz długość przekątnej głównej D tego graniastosłupa oraz jego pole powierzchni całkowitej Pc.",
+  "solid": {
+    "type": "regular_quad_prism",
+    "initial_dimensions": {
+      "a": 4.0,
+      "H": 6.0
+    },
+    "default_opacity": 0.4
+  },
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Wyznacz długość przekątnej podstawy d = |AC| kwadratu o boku a = 4.",
+      "visualization": {
+        "highlight_faces": ["base"],
+        "highlight_segments": ["base_edge_AB", "base_diagonal_AC"],
+        "highlight_angles": [],
+        "show_helper_triangle": ["A", "B", "C"]
+      },
+      "interaction_type": "numeric_input",
+      "target_parameter": "d",
+      "expected_value": 5.65685,
+      "tolerance": 0.05,
+      "formula_hint": "d = a * sqrt(2)"
+    },
+    {
+      "step_number": 2,
+      "instruction": "Z twierdzenia Pitagorasa dla trójkąta prostokątnego ACC' (przekątna podstawy d, wysokość H = 6, przekątna główna D) oblicz długość przekątnej głównej D.",
+      "visualization": {
+        "highlight_faces": [],
+        "highlight_segments": ["base_diagonal_AC", "lateral_edge_CC'", "main_diagonal_AC'"],
+        "highlight_angles": ["angle_main_diagonal_base"],
+        "show_helper_triangle": ["A", "C", "C'"]
+      },
+      "interaction_type": "numeric_input",
+      "target_parameter": "D",
+      "expected_value": 8.24621,
+      "tolerance": 0.05,
+      "formula_hint": "D = sqrt(d^2 + H^2) = sqrt(32 + 36) = sqrt(68)"
+    },
+    {
+      "step_number": 3,
+      "instruction": "Oblicz pole powierzchni całkowitej graniastosłupa Pc = 2 * Pp + Pb.",
+      "visualization": {
+        "highlight_faces": ["base", "top_base"],
+        "highlight_segments": ["base_edge_AB", "lateral_edge_CC'"],
+        "highlight_angles": [],
+        "show_helper_triangle": null
+      },
+      "interaction_type": "numeric_input",
+      "target_parameter": "Pc",
+      "expected_value": 128.0,
+      "tolerance": 0.05,
+      "formula_hint": "Pc = 2 * a^2 + 4 * a * H"
+    }
+  ]
+}

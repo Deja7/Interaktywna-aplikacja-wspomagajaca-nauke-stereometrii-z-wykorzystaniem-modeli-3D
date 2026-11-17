@@ -1,0 +1,136 @@
+# =============================================================================
+# Visual Studio / C++
+# =============================================================================
+.vs/
+*.VC.db
+*.VC.VC.opendb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.ipch
+*.tlog
+
+# Build directories & binaries
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+out/
+
+*.obj
+*.o
+*.pdb
+*.ilk
+*.idb
+*.iobj
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.exe
+*.dll
+*.so
+*.dylib
+*.lib
+*.a
+*.exp
+*.aps
+
+# =============================================================================
+# CMake
+# =============================================================================
+[Bb]uild/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+compile_commands.json
+install_manifest.txt
+Makefile
+*.cmake.in
+_deps/
+Testing/
+
+# =============================================================================
+# MS Office / Dokumentacja (pliki tymczasowe Word / LaTeX)
+# =============================================================================
+~$*.doc*
+~$*.xls*
+~$*.ppt*
+*.~lock.*
+
+# LaTeX (RPI raporty)
+*.aux
+*.lof
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+*.dvi
+*.xdv
+*-converted-to.*
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+# =============================================================================
+# IDE / Edytory / System operacyjny
+# =============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Windows / macOS
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Narzędzia pomocnicze / skrypty Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
